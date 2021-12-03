@@ -1,8 +1,8 @@
 package module
 
 import (
-	"baikalDump/common"
-	"baikalDump/tools"
+	"BaikalDump/common"
+	"BaikalDump/tools"
 	"fmt"
 	"os"
 	"strings"

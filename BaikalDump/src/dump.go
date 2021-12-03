@@ -5,8 +5,8 @@ import (
 	"os"
 	"fmt"
 	"sync"
-	"baikalDump/common"
-	"baikalDump/module"
+	"BaikalDump/common"
+	"BaikalDump/module"
 )
 
 

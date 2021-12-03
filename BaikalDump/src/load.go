@@ -8,8 +8,8 @@ import (
 	"path"
 	"runtime"
 	"sync"
-	"baikalDump/common"
-	"baikalDump/module"
+	"BaikalDump/common"
+	"BaikalDump/module"
 )
 
 func LoadLocalData(dirName string, outQue chan *common.TableRowString, wg * sync.WaitGroup, ty string){

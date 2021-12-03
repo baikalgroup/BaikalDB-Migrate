@@ -9,7 +9,7 @@ import (
     "reflect"
     "strings"
     "time"
-    "baikalDump/common"
+    "BaikalDump/common"
 )
 
 type DBClient struct {

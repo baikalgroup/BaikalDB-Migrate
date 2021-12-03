@@ -1,7 +1,7 @@
 package module
 
 import (
-	"baikalDump/common"
+	"BaikalDump/common"
 	"fmt"
 	"os"
 	"path"

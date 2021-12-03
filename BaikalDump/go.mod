@@ -1,4 +1,4 @@
-module baikalDump
+module BaikalDump
 
 go 1.16
 
