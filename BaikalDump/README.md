@@ -1,10 +1,23 @@
-备份数据脚本
+导入导出工具
 
-1. 建表， 从源库拉取建表语句，在目的库建表。
-python src/create_table.py config/config.cfg
+1. 编译
 
-2. 导出数据，从源库拉取数据，放入指定目录
-python src/dump_data.py config/config.cfg
+导出工具dump:  go build -o bin/dump src/dump.go
 
-3. 写入目的库
-python src/insert.py config/config.cfg
+导入工具load:  go build -o bin/load src/load.go
+
+
+2. 使用
+
+2.1 dump
+   ./bin/dump conf/config.cfg
+
+   配置文件为conf/config.cfg, 填写baikaldb的连接串，及dump路径和格式.
+
+
+2.2 load
+   ./bin/load conf/config.cfg
+
+   需要添加localconfig， destmysql等配置
+
+ 

@@ -1,0 +1,27 @@
+host: 127.0.0.1 
+port: 28282
+user: db_user
+password: xxxxxxx
+database: dbname
+# table为需要dump的表，空位全部表
+table:
+# filtertable为需要过滤的表，恢复过滤掉table表
+filtertable: sql_agg_info,order_all
+cpucount: 10
+# 线程数
+workercount: 30
+#批量导出大小
+stepsize: 3000
+type: local  # local为写入本地文件， mysql为写入到mysql库， mysql配置文destmysql
+localconfig:
+  dumpdir: ./data  #导出路径
+  format: json #可为json， 或sql
+destmysql:
+  host: 127.0.0.1
+  port: 3306
+  sqlmode: replace #insert or replace
+  user: mysql_user_name
+  password: mysql_password
+  database: dbname
+  workercount: 20  # 写入线程数
+  countpersql: 1000 #单条sql最大行数
